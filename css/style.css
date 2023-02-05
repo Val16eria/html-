@@ -32,3 +32,42 @@ body {
     height: 200px;
     background-color: cadetblue;
 }
+
+/* Destinations */
+
+.destinations {
+    padding: 96px 0 100px;
+}
+
+.container-right-dest {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.destinations_row {
+    display: flex;
+    column-gap: 40px;
+}
+
+.destinations__content {
+    width: 408px;
+}
+
+.destinations__description {
+    width: 512px;
+
+}
+
+.destinations__title {
+    margin-bottom: 21px;
+    display: flex;
+    column-gap: 15px;
+    font-size: 23px;
+    font-weight: 400;
+
+}
+
+.destinations__text {
+    font-size: 56px;
+    font-weight: 400;
+}
