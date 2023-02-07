@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
 
 :root {
-    --container-width: 1270px;
+    --container-width: 1300px;
     --container-padding: 15px;
     --secondary: #E94D35;
 }
@@ -46,19 +46,6 @@ body {
     color: #161513;
 }
 
-.header::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 188px;
-
-    background-image: url("./../image/body/list.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-}
-
 .header__top {
     margin-bottom: 86px;
 }
@@ -78,13 +65,48 @@ body {
     flex-grow: 1;
 }
 
-.header__img img {
+.header__img img{
     position: absolute;
     top: -20px;
     right: 0;
     max-width: unset;
     width: 502px;
     height: 503px;
+}
+
+.header__rectangle {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+
+.rectangle {
+    position: relative;
+    top: 260px;
+    max-width: unset;
+
+
+
+    margin-bottom: 120px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+
+    transform: rotate(-5deg);
+}
+
+.rectangle__row {
+    position: absolute;
+    display: flex;
+    column-gap: 30px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 70px;
+}
+
+.rectangle__row img{
+    width: 20px;
+    height: 20px;
 }
 
 /* Nav */
@@ -175,7 +197,8 @@ body {
     border: 1px solid #161513;
 }
 
-.header__btn:hover {
+.header__btn:hover,
+.header__btn.active {
     color: #F2F1EF;
     background-color: #161513;
     transition: background-color 0.2s ease-in;
