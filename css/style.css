@@ -84,8 +84,6 @@ body {
     top: 260px;
     max-width: unset;
 
-
-
     margin-bottom: 120px;
     width: 100%;
     height: 50px;
@@ -144,6 +142,10 @@ body {
     font-weight: 500;
 }
 
+.nav__toggle {
+    display: none;
+}
+
 /* Logo */
 .logo {
     font-size: 20px;
@@ -173,7 +175,6 @@ body {
 
 
 /*  Header content */
-
 .header__title {
     margin-bottom: 30px;
     font-size: 56px;
@@ -186,6 +187,16 @@ body {
     column-gap: 15px;
     font-size: 23px;
     font-weight: 500;
+}
+
+.header__title img{
+    margin-top: 15px;
+}
+
+.header__text img {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
 }
 
 .header__btn {
@@ -202,4 +213,321 @@ body {
     color: #F2F1EF;
     background-color: #161513;
     transition: background-color 0.2s ease-in;
+}
+
+/* Menu icon */
+.menu-icon-wrapper {
+    /*   background: red; */
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon {
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: black;
+}
+
+.menu-icon::before {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+}
+
+.menu-icon::after {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+
+}
+
+.menu-icon.menu-icon-active {
+    background-color: transparent;
+}
+
+.menu-icon.menu-icon-active::before {
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active::after {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+/* Media header*/
+@media (max-width: 1280px) {
+    .container {
+        padding: 0 45px;
+    }
+    .rectangle__row {
+        column-gap: 30px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1196px) {
+    .rectangle__row {
+        column-gap: 30px;
+        font-size: 10px;
+    }
+
+    .nav__list {
+        column-gap: 35px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .header__title {
+        font-size: 46px;
+    }
+
+    .header__content {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 1125px) {
+    .header__img img{
+        width: 422px;
+        height: 423px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .header__row {
+        flex-direction: column;
+    }
+    .header__img img {
+        position: static;
+        margin: 40px 0;
+        width: 502px;
+        height: 503px;
+    }
+    .header__img {
+        right: -220px;
+    }
+    .header__rectangle {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav__login {
+        display: none;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .no-scroll {
+        overflow-y: hidden;
+    }
+
+    .nav--mobile {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+
+        flex-direction: column;
+        align-items: center;
+
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        background-color: #E6E3DE;
+    }
+
+    .nav--mobile .nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+
+        font-size: 32px;
+        text-decoration: none;
+    }
+
+    .nav--mobile .nav__login {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+
+        font-size: 32px;
+    }
+
+    .nav--mobile .nav__toggle {
+        position: fixed;
+        top: 50px;
+        right: 50px;
+    }
+
+    .header__img {
+        right: 0;
+    }
+
+    .header__title {
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+
+    .header__text {
+        margin-bottom: 20px;
+        column-gap: 10px;
+        font-size: 18px;
+    }
+
+    .header__btn {
+        padding: 11px 30px;
+        font-size: 13px;
+    }
+
+    .header__content {
+        max-width: 550px;
+    }
+
+    .header__img img {
+        width: 402px;
+        height: 403px;
+    }
+}
+
+@media (max-width: 800px) {
+
+}
+
+@media (max-width: 675px) {
+    .header__title {
+        margin-bottom: 15px;
+        font-size: 30px;
+    }
+
+    .header__text {
+        margin-bottom: 15px;
+        column-gap: 10px;
+        font-size: 14px;
+    }
+
+    .header__btn {
+        padding: 11px 20px;
+        font-size: 13px;
+    }
+
+    .header__content {
+        max-width: 550px;
+    }
+
+    .header__img img {
+        width: 402px;
+        height: 403px;
+    }
+
+    .header__title img{
+        margin-top: 0;
+    }
+
+    .header__text img{
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 465px) {
+    .header__img {
+        right: 10px;
+    }
+
+    .header__img img {
+        width: 302px;
+        height: 303px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header__title {
+        margin-bottom: 15px;
+        font-size: 23px;
+    }
+
+    .header__text {
+        margin-bottom: 15px;
+        column-gap: 10px;
+        font-size: 10px;
+    }
+
+    .header__title img{
+        margin-top: 5px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .header__text img {
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav__logo img {
+        width: 100px;
+        height: 25px;
+    }
+
+    .nav--mobile .nav__list {
+        row-gap: 30px;
+
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 280px) {
+    .nav__logo img {
+        margin-bottom: 20px;
+    }
+
+    .header__text {
+        column-gap: 8px;
+        font-size: 8px;
+    }
+
+    .header__content a{
+        margin: 10px 0;
+        padding-top: 10px;
+        width: 130px;
+        height: 40px;
+
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .header__img img {
+        width: 252px;
+        height: 253px;
+    }
+
+    .header__img{
+        right: 30px;
+    }
 }
