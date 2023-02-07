@@ -377,6 +377,18 @@ body {
     font-weight: 500;
 }
 
+.article__logo {
+    position: relative;
+}
+
+.article__logo img {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top: -350px;
+    left: 1150px;
+}
+
 .articles__btn {
     color:white;
     background-color: black;
