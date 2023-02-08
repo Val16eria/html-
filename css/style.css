@@ -715,7 +715,6 @@ body {
 .content__info {
     display: flex;
     justify-content: space-between;
-
 }
 
 .content__info-image {
@@ -793,7 +792,7 @@ body {
         width: 1300px;
     }
     .footer {
-        width: 1300px;
+        width: 1440px;
     }
 }
 
