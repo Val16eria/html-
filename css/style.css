@@ -81,6 +81,7 @@ body {
 .header__rectangle {
     height: 50px;
     background-color: black;
+    color: white;
     width: 100%;
     transform: rotate(-5deg);
 }
@@ -815,6 +816,10 @@ body {
     .destinations_row {
         flex-direction: column;
         margin-bottom: 100px;
+    }
+
+    .destinations__container {
+        flex-direction: column;
     }
 
     .destinations__title {
