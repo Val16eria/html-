@@ -23,14 +23,32 @@
                     <ul class="nav__login">
                         <li><a href="#" class="btn">Let's talk</a></li>
                     </ul>
-
-                    <button type="button" class="nav__toggle">
-                        <div class="menu-icon-wrapper">
-                            <div class="menu-icon"></div>
-                        </div>
-                    </button>
                 </nav>
             </div>
+        </div>
+
+        <div class="mobile-container">
+            <div class="mobile-container__view">
+                <div class="mobile-container__logo">
+                    <img src="./image/header/header-logo.svg" alt="logo-red" />
+                </div>
+                <div class="mobile-container__menu">
+                    <img src="./image/header/bar.png" alt="bar" />
+                </div>
+            </div>
+            <div class="mobile-container__list">
+               <ul class="nav__list"><li><a href="#" class="active">Home</a></li>
+                   <li><a href="#">About</a></li>
+                   <li><a href="#">Contact</a></li>
+                </ul>
+              <ul class="nav__login">
+                  <li><a href="#" class="btn">Let's talk</a></li>
+              </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
             <div class="header__row">
                 <div class="header__content">
                     <h1 class="header__title">
@@ -45,8 +63,10 @@
                         <img src="./image/header/logo-red.svg" alt="logo-red">
                         <p>WEBFLOW</p>
                     </div>
-                    <a href="#" class="header__btn active">Get a project?</a>
-                    <a href="#" class="header__btn">Let's talk</a>
+                    <div class="header__btn-container">
+                        <a href="#" class="header__btn active">Get a project?</a>
+                        <a href="#" class="header__btn">Let's talk</a>
+                    </div>
                 </div>
                 <div class="header__img">
                     <img src="./image/body/header-man.png" alt="Image">
@@ -72,44 +92,44 @@
                 </div>
             </div>
         </div>
-    </header>
-    <main>
         <section class="destinations">
             <div class="container-right">
                 <div class="destinations_row">
-                    <div class="destinations__content">
-                        <div class="destinations__title">
-                            <p>TAYLER</p>
-                            <img src="./image/header/logo-red.svg" alt="logo-red"/>
-                            <p>BARTHHOLD</p>
-                        </div>
-                        <div class="destinations__text">
-                            <p>Lead product designer and art director.</p>
-                        </div>
-                    </div>
-                    <div class="destinations__description">
-                        <div class="description">
-                            <div class="description__title">Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore
+                    <div class="destinations__container">
+                        <div class="destinations__content">
+                            <div class="destinations__title">
+                                <p>TAYLER</p>
+                                <img src="./image/header/logo-red.svg" alt="logo-red"/>
+                                <p>BARTHHOLD</p>
                             </div>
-                            <div class="description__text">
-                                Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            <div class="destinations__text">
+                                <p>Lead product designer and art director.</p>
                             </div>
-                            <div class="description__items">
-                                <div class="description__item">
-                                    <span>BORN IN</span>
-                                    <p>New York</p>
+                        </div>
+                        <div class="destinations__description">
+                            <div class="description">
+                                <div class="description__title">Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore
                                 </div>
-                                <div class="description__item">
-                                    <span>EXPERIENCE</span>
-                                    <p>7+ Years</p>
+                                <div class="description__text">
+                                    Lorem ipsum dolor sit amet,
+                                    consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </div>
-                                <div class="description__item">
-                                    <span>DATE OF BIRTH</span>
-                                    <p>27 June 1992</p>
+                                <div class="description__items">
+                                    <div class="description__item">
+                                        <span>BORN IN</span>
+                                        <p>New York</p>
+                                    </div>
+                                    <div class="description__item">
+                                        <span>EXPERIENCE</span>
+                                        <p>7+ Years</p>
+                                    </div>
+                                    <div class="description__item">
+                                        <span>DATE OF BIRTH</span>
+                                        <p>27 June 1992</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -384,42 +404,42 @@
                         <h2>Articles</h2>
                         <p>REGONITIONS & ACCOIMPLISHMENTS</p>
                     </div>
-                    <div class="articles__row">
-                        <div class="articles__title">
-                            <span>DESIGN / April 28, 2022</span>
-                            <p>Why I moved from Wordpress to Webflow</p>
+                    <div class="articles__row-content">
+                        <div class="articles__row">
+                            <div class="articles__title">
+                                <span>DESIGN / April 28, 2022</span>
+                                <p>Why I moved from Wordpress to Webflow</p>
+                            </div>
+                            <div class="articles__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            </div>
                         </div>
-                        <div class="articles__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                        <div class="articles__row">
+                            <div class="articles__title">
+                                <span>DESIGN / April 26, 2022</span>
+                                <p>What did i learn from doing 50+ design sprints</p>
+                            </div>
+                            <div class="articles__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            </div>
+                        </div>
+                        <div class="articles__row">
+                            <div class="articles__title">
+                                <span>BUSINESS & OFFICE / April 26, 2022</span>
+                                <p>Fostering professional growth in your company</p>
+                            </div>
+                            <div class="articles__text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                            </div>
+                        </div>
+                        <div class="articles__btn">
+                            <a>Browse Articles</a>
                         </div>
                     </div>
-                    <div class="articles__row">
-                        <div class="articles__title">
-                            <span>DESIGN / April 26, 2022</span>
-                            <p>What did i learn from doing 50+ design sprints</p>
-                        </div>
-                        <div class="articles__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                        </div>
-                    </div>
-                    <div class="articles__row">
-                        <div class="articles__title">
-                            <span>BUSINESS & OFFICE / April 26, 2022</span>
-                            <p>Fostering professional growth in your company</p>
-                        </div>
-                        <div class="articles__text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore.</p>
-                        </div>
-                    </div>
-                    <div class="article__logo">
-                        <!--<img src="./image/header/logo-red.svg" alt="logo-red"/>-->
-                    </div>
-                    <div class="articles__btn">
-                        <a>Browse Articles</a>
-                    </div>
+
                 </div>
             </div>
         </section>
