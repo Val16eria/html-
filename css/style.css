@@ -38,7 +38,6 @@ body {
     background-color: cadetblue;
 }
 
-/* Header */
 .header {
     position: relative;
     /*min-height: 904px;*/
@@ -99,7 +98,6 @@ body {
     height: 20px;
 }
 
-/* Nav */
 .nav {
     display: flex;
     justify-content: space-between;
@@ -130,7 +128,6 @@ body {
     font-weight: 500;
 }
 
-/* Logo */
 .logo {
     font-size: 20px;
     color: #161513;
@@ -141,7 +138,6 @@ body {
     color: inherit;
 }
 
-/* Button */
 .btn {
     display: inline-block;
     padding: 13px 40px;
@@ -157,7 +153,6 @@ body {
     transition: background-color 0.2s ease-in;
 }
 
-/*  Header content */
 .header__title {
     margin-bottom: 30px;
     font-size: 56px;
@@ -198,7 +193,6 @@ body {
     transition: background-color 0.2s ease-in;
 }
 
-/* Menu icon */
 .menu-icon-wrapper {
     width: 30px;
     height: 30px;
@@ -251,7 +245,6 @@ body {
     transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
-/* Destinations */
 .destinations {
     padding: 96px 0 100px;
 }
@@ -300,7 +293,6 @@ body {
     font-weight: 400;
 }
 
-/* Description */
 .description {
 
 }
@@ -337,7 +329,6 @@ body {
     font-weight: 500;
 }
 
- /* Experiance */
 .destinations__experience {
     margin-bottom: 120px;
 }
@@ -371,7 +362,6 @@ body {
     background-color: black;
 }
 
-/* Awards */
 .destinations__describe {
     margin-bottom: 120px;
 }
@@ -443,7 +433,6 @@ body {
     font-weight: 500;
 }
 
-/* Portfolio */
 .destinations__portfolio {
     margin-bottom: 120px;
 }
@@ -495,7 +484,6 @@ body {
     color: var(--secondary);
 }
 
-/* Services */
 .services__columns {
     display: flex;
     flex-wrap: wrap;
@@ -523,7 +511,6 @@ body {
     font-weight: 500;
 }
 
-/* Customer */
 .customer__columns {
     display: flex;
     flex-wrap: wrap;
@@ -547,7 +534,6 @@ body {
     text-align: center;
 }
 
-/* Articles */
 .destinations__articles {
     margin-bottom: 120px;
 }
@@ -614,7 +600,6 @@ body {
     transition: background-color 0.4s ease-in;
 }
 
-/* Subscribe */
 .subscribe {
     align-items: center;
     background-color: #E6E3DE;
@@ -667,7 +652,6 @@ body {
     transition: background-color 0.3s ease-in;
 }
 
-/* Footer */
 .footer {
     background-color: #161513;
     color: white;
