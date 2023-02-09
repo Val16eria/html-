@@ -40,7 +40,6 @@ body {
 
 .header {
     position: relative;
-    /*min-height: 904px;*/
     padding-top: 44px;
     color: #161513;
 }
@@ -291,10 +290,6 @@ body {
 .destinations__text {
     font-size: 56px;
     font-weight: 400;
-}
-
-.description {
-
 }
 
 .description__title {
